@@ -13381,11 +13381,13 @@ h2 {
   background-image: url("../img/common/title.png");
   background-size: 200px auto;
   background-repeat: no-repeat;
-  background-position: center;
+  min-width: 220px;
+  background-position: left center;
   text-indent: -10000px; }
   @media (max-width: 768px) {
     .navbar-brand {
       position: absolute;
+      background-position: center;
       width: 100%;
       left: 0;
       text-align: center;
