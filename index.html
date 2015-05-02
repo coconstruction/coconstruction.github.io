@@ -1,468 +1,481 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="">
+  <meta name="description" content="共構">
   <meta name="author" content="共構">
+  <meta property="og:image" content="img/common/preview.jpg" />
   <link rel="icon" href="img/icon.jpg" type="image/jpeg" sizes="16x16">
   <title>共構 | Co-Construction</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/app.css">
+
+  <script src="js/vendor/jquery-1.11.3.min.js"></script>
+
+  <script src="js/vendor/Simrou/build/simrou.min.js" type="text/javascript"></script>
+  <script src="js/vendor/wow.min.js"></script>
+
+
+
+
 </head>
 
 <body role="document">
   <!-- Fixed navbar z-->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="fb_btn_mobile">
-          <div class=""></div>
-        </a>
-        <a class="navbar-brand"  href="#/Main">CO-CONSTRUCTION</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#/Main" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">創作核心理念<span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a class="eleNav" href="#/Main/about" data-goto="#Main/about">認識都市</a></li>
-              <li><a class="eleNav" href="#/Main/plan" data-goto="#Main/plan">都市規劃</a></li>
-              <li><a class="eleNav" href="#/Main/participation" data-goto="#participation">市民參與</a></li>
-              <li><a class="eleNav" href="#/Main/construction" data-goto="#construction">關於共構</a></li>
-              <!--
+  <div class="worldmap"></div>
+  <div id="prepare">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="fb_btn_mobile">
+            <div class=""></div>
+          </a>
+          <a class="navbar-brand" href="#/Main">CO-CONSTRUCTION</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#/Main" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">創作核心理念<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a class="eleNav" href="#/Main/about" data-goto="#Main/about">認識都市</a></li>
+                <li><a class="eleNav" href="#/Main/plan" data-goto="#Main/plan">都市規劃</a></li>
+                <li><a class="eleNav" href="#/Main/participation" data-goto="#participation">市民參與</a></li>
+                <li><a class="eleNav" href="#/Main/construction" data-goto="#construction">關於共構</a></li>
+                <!--
                 <li class="divider"></li>
                 <li class="dropdown-header">Nav header</li>
                 <li><a href="#">Separated link</a></li>
                 <li><a href="#">One more separated link</a></li> -->
-            </ul>
-          </li>
-          <!--li class="divider-vertical"></li>
+              </ul>
+            </li>
+            <!--li class="divider-vertical"></li>
           <li><a href="#news">官方訊息</a></li-->
-          <li class="divider-vertical hidden-md"></li>
-          <li><a class="pageNav disabled" href="#" onclick="return false" data-toggle="tooltip" data-placement="bottom" title="5/7 星期四 開放" >預約系統</a></li>
-          <li class="divider-vertical"></li>
-          <li><a class="pageNav" href="#/About">關於我們</a></li>
-          <li class="divider-vertical"></li>
-          <li><a href="https://www.facebook.com/DCTCoConstruction" class="fb_btn" target="_blank">.</a></li>
+            <li class="divider-vertical hidden-md"></li>
+            <li><a class="pageNav disabled" href="#" onclick="return false" data-toggle="tooltip" data-placement="bottom" title="5/7 星期四 開放">預約系統</a></li>
+            <li class="divider-vertical"></li>
+            <li><a class="pageNav" href="#/About">關於我們</a></li>
+            <li class="divider-vertical"></li>
+            <li><a href="https://www.facebook.com/DCTCoConstruction" class="fb_btn" target="_blank">.</a></li>
 
-        </ul>
+          </ul>
 
-      </div>
-      <!--/.nav-collapse -->
-      <div class "main">
-        <div data-img="facebook link"></div>
-      </div>
-  </nav>
-  </div>
-  <!-- /container -->
-  <div id="Main" class="LargePage active ">
-    <div id="main"  >
-      <div class="container banner" role="main">
-        <div class="col-sm-5 col-xs-10 col-xs-offset-1 col-sm-offset-0">
-          <div class="logo">
-            <img id="logo-img" src="img/common/logo.png" alt="共構" width="100%">
-          </div>
-          <div id="slogan">
-            <img src="img/main/slogan.png" alt="「當城市是由每個人共同創造時，城市才有能力提供東西給每一個人。」" id="slogan-img" width="100%">
-          </div>
         </div>
+        <!--/.nav-collapse -->
+        <div class "main">
+          <div data-img="facebook link"></div>
+        </div>
+    </nav>
+
+    <!-- /container -->
+    <div id="Main" class="LargePage active ">
+      <div id="main">
+        <div class="container banner" role="main">
+          <div class="col-sm-5 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+            <div class="logo">
+              <img id="logo-img" src="img/common/logo.png" alt="共構" width="100%">
+            </div>
+            <div id="slogan">
+              <img src="img/main/slogan.png" alt="「當城市是由每個人共同創造時，城市才有能力提供東西給每一個人。」" id="slogan-img" width="100%">
+            </div>
+          </div>
 
 
-        <div class="col-sm-7 animation col-xs-12">
-          <div class="positionContainer">
-            <img src="img/main/animation-base.png" alt="城市的共構" id="animation-base">
-            <div class="outter">
-              <div class="inner animation-inner">
-                <img src="img/main/animation-01.png" alt="建築1">
-                <img src="img/main/animation-02.png" alt="建築1">
+          <div class="col-sm-7 animation col-xs-12">
+            <div class="positionContainer">
+              <img src="img/main/animation-base.png" alt="城市的共構" id="animation-base">
+              <div class="outter">
+                <div class="inner animation-inner">
+                  <img src="img/main/animation-01.png" alt="建築1">
+                  <img src="img/main/animation-02.png" alt="建築1">
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- <div class="col-sm-7 animation">
+          <!-- <div class="col-sm-7 animation">
           <img src="img/main/animation-base.png" alt="城市的共構" id="animation-base" >
           <div class="animation-inner">
             <img src="img/main/animation-01.png" alt="建築1">
             <img src="img/main/animation-02.png" alt="建築1">
           </div>
         </div> -->
-      </div>
-
-      <div class="container wide-bar">
-      </div>
-
-      <div class="container main-navigation">
-        <nav>
-          <div class="col-sm-3 btn col-xs-6" data-goto="#about">
-            <span class="pre">認識</span>
-            <img src="img/main/btn-1.png" class="" alt="認識城市">
-            <span class="afr">城市</span>
-          </div>
-
-          <div class="col-sm-3 btn col-xs-6" data-goto="#plan">
-            <span class="pre">都市</span>
-            <img src="img/main/btn-2.png" alt="都市規劃">
-            <span class="afr">規劃</span>
-          </div>
-
-          <div class="col-sm-3 btn col-xs-6" data-goto="#participation">
-            <span class="pre">市民</span>
-            <img src="img/main/btn-3.png" alt="市民參與">
-            <span class="afr">參與</span>
-          </div>
-
-          <div class="col-sm-3 btn col-xs-6" data-goto="#construction">
-            <span class="pre">關於</span>
-            <img src="img/main/btn-4.png" alt="關於共構">
-            <span class="afr">共構</span>
-          </div>
-
-        </nav>
-      </div>
-    </div>
-
-    <div id="about" class="Page">
-      <div class="container">
-        <div class="row">
-          <div class="title-block col-md-12">
-            <div class="title-background wow fadeInUp" data-wow-offset="100"></div>
-            <h2>認識城市</h2>
-            <span>你知道城市的起源是什麼嗎</span>
-          </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 coverContainer wow fadeInLeft" data-wow-offset="100">
-            <img src="img/main/about/cover1.png" width="100%">
-          </div>
-          <div class="col-md-6 wow fadeInRight">
-            <h3  class="_right-title ">城市起源</h3>
-            <p>人類社會由個體生活到游牧居所，再從散居生活到農耕定居。因為有了安定豐食的生活後， 人們才有充足的時間進入發明與製作的階段，接續出現以物易物的社會模式，形成商品交換 的場域輪廓，逐漸聚集人群成為最初的城市雛型。隨著不同需求，城市也發展成不同的樣貌 ，盡力符合每個居住在城市中的市民需求。
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 wow fadeInLeft">
-            <h3>城市功能</h3>
-            <p>城市做為人類最偉大的發明物，最早的城市因為商品交換集聚人們而成，人類開始希望能夠 在同一個場域內滿足生活上所有的需求。進一步來說，現代都市人希望能在城市中滿足各式 生活機能的服務需求，舉凡飲食、金融、貿易、文化、娛樂等各方面需求。
-            </p>
-          </div>
-          <div class="col-md-6 coverContainer wow fadeInRight" data-wow-offset="100">
-            <img src="img/main/about/cover2.png" class="imgSmaller" >
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div id="plan" class="Page">
-      <div class="container">
-        <div class="row">
-          <div class="title-block col-md-12">
-            <div class="title-background wow fadeInUp" data-wow-offset="100"></div>
-            <h2>都市規劃</h2>
-            <span>都市規劃為人類社會帶來什麼</span>
-          </div>
+        <div class="container wide-bar">
         </div>
-        <div class="row">
-          <div class="col-md-8 coverContainer paddingTop5 wow fadeInLeft" data-wow-offset="100">
-            <div id="mag" >
-              <img src="img/main/plan/cover_small.png" alt="都市規劃">
+
+        <div class="container main-navigation">
+          <nav>
+            <div class="col-sm-3 btn col-xs-6" data-goto="#about">
+              <span class="pre">認識</span>
+              <img src="img/main/btn-1.png" class="" alt="認識城市">
+              <span class="afr">城市</span>
             </div>
 
+            <div class="col-sm-3 btn col-xs-6" data-goto="#plan">
+              <span class="pre">都市</span>
+              <img src="img/main/btn-2.png" alt="都市規劃">
+              <span class="afr">規劃</span>
+            </div>
+
+            <div class="col-sm-3 btn col-xs-6" data-goto="#participation">
+              <span class="pre">市民</span>
+              <img src="img/main/btn-3.png" alt="市民參與">
+              <span class="afr">參與</span>
+            </div>
+
+            <div class="col-sm-3 btn col-xs-6" data-goto="#construction">
+              <span class="pre">關於</span>
+              <img src="img/main/btn-4.png" alt="關於共構">
+              <span class="afr">共構</span>
+            </div>
+
+          </nav>
+        </div>
+      </div>
+
+      <div id="about" class="Page">
+        <div class="container">
+          <div class="row">
+            <div class="title-block col-md-12">
+              <div class="title-background wow fadeInUp" data-wow-offset="100"></div>
+              <h2>認識城市</h2>
+              <span>你知道城市的起源是什麼嗎</span>
+            </div>
           </div>
-          <div class="col-md-4">
-            <div class="block wow fadeInLeft">
-              <h3 class="_right-title">都市規劃的興起</h3>
-              <p>十九世紀工業革命展開以前，社會或專家學者對於城市的探討多為社會科學與建築設計美學 兩個層面，像是古典和文藝復興時期對於現代城市規模與形式美學上的追求。工業革命展開 後，帶來歐洲與北美洲大城市的興盛發展，促成土木工程與都市規劃兩大新興產業。
+          <div class="row">
+            <div class="col-md-6 coverContainer wow fadeInLeft" data-wow-offset="100">
+              <img src="img/main/about/cover1.png" width="100%">
+            </div>
+            <div class="col-md-6 wow fadeInRight">
+              <h3 class="_right-title ">城市起源</h3>
+              <p>人類社會由個體生活到游牧居所，再從散居生活到農耕定居。因為有了安定豐食的生活後， 人們才有充足的時間進入發明與製作的階段，接續出現以物易物的社會模式，形成商品交換 的場域輪廓，逐漸聚集人群成為最初的城市雛型。隨著不同需求，城市也發展成不同的樣貌 ，盡力符合每個居住在城市中的市民需求。
               </p>
             </div>
-            <div class="block wow fadeInLeft">
-              <h3 class="_right-title">都市規劃的功能</h3>
-              <p>都市規劃有系統整合都市及其鄰近區域的建設、經濟、社會、交通與土地利用等，進行空間 規劃、道路交通規劃、環境規劃等內容。是為提昇都市生活品質，並以滿足市民對於都市中 物質及精神生活需求的環境管理手法。我們認為，都市規劃應將創造市民居住與生活的幸福 為最高目標。
+          </div>
+          <div class="row">
+            <div class="col-md-6 wow fadeInLeft">
+              <h3>城市功能</h3>
+              <p>城市做為人類最偉大的發明物，最早的城市因為商品交換集聚人們而成，人類開始希望能夠 在同一個場域內滿足生活上所有的需求。進一步來說，現代都市人希望能在城市中滿足各式 生活機能的服務需求，舉凡飲食、金融、貿易、文化、娛樂等各方面需求。
               </p>
             </div>
-
+            <div class="col-md-6 coverContainer wow fadeInRight" data-wow-offset="100">
+              <img src="img/main/about/cover2.png" class="imgSmaller">
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
+      <div id="plan" class="Page">
+        <div class="container">
+          <div class="row">
+            <div class="title-block col-md-12">
+              <div class="title-background wow fadeInUp" data-wow-offset="100"></div>
+              <h2>都市規劃</h2>
+              <span>都市規劃為人類社會帶來什麼</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 coverContainer paddingTop5 wow fadeInLeft" data-wow-offset="100">
+              <div id="mag">
+                <img src="img/main/plan/cover_small.png" alt="都市規劃">
+              </div>
 
-    <div id="participation" class="Page">
-      <div class="container">
-        <div class="row">
-          <div class="title-block col-md-12">
-            <div class="title-background wow fadeInUp" data-wow-offset="100"></div>
-            <h2>市民參與</h2>
-            <span>一個符合市民理想的生活空間，我們認為是需要建構在每一位市民的需求與意見上的。</span>
+            </div>
+            <div class="col-md-4">
+              <div class="block wow fadeInLeft">
+                <h3 class="_right-title">都市規劃的興起</h3>
+                <p>十九世紀工業革命展開以前，社會或專家學者對於城市的探討多為社會科學與建築設計美學 兩個層面，像是古典和文藝復興時期對於現代城市規模與形式美學上的追求。工業革命展開 後，帶來歐洲與北美洲大城市的興盛發展，促成土木工程與都市規劃兩大新興產業。
+                </p>
+              </div>
+              <div class="block wow fadeInLeft">
+                <h3 class="_right-title">都市規劃的功能</h3>
+                <p>都市規劃有系統整合都市及其鄰近區域的建設、經濟、社會、交通與土地利用等，進行空間 規劃、道路交通規劃、環境規劃等內容。是為提昇都市生活品質，並以滿足市民對於都市中 物質及精神生活需求的環境管理手法。我們認為，都市規劃應將創造市民居住與生活的幸福 為最高目標。
+                </p>
+              </div>
+
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-5">
-            <div class="coverContainer wow fadeInRight" data-wow-offset="100">
-              <div class="positionContainer">
-                <img src="img/main/participation/page4_02-01.png" alt="">
-                <div class="outter">
-                  <div class="inner">
-                    <img data-wow-delay=".2s" src="img/main/participation/page4_03-01.png" class="wow  bounceIn civil"   data-wow-offset="50" alt="人" >
-                    <img data-wow-delay=".4s" src="img/main/participation/page4_04-01.png" class="wow  bounceIn civil" data-wow-offset="50" alt="人">
-                    <img data-wow-delay=".6s" src="img/main/participation/page4_05-01.png" class="wow  bounceIn civil" data-wow-offset="50" alt="人">
-                    <img data-wow-delay=".8s" src="img/main/participation/page4_06-01.png" class="wow  bounceIn civil" data-wow-offset="50" alt="人">
-                    <img data-wow-delay="1s" src="img/main/participation/page4_07-01.png" class="wow  bounceIn civil" data-wow-offset="50" alt="人">
+      </div>
+
+
+      <div id="participation" class="Page">
+        <div class="container">
+          <div class="row">
+            <div class="title-block col-md-12">
+              <div class="title-background wow fadeInUp" data-wow-offset="100"></div>
+              <h2>市民參與</h2>
+              <span>一個符合市民理想的生活空間，我們認為是需要建構在每一位市民的需求與意見上的。</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <div class="coverContainer wow fadeInRight" data-wow-offset="100">
+                <div class="positionContainer">
+                  <img src="img/main/participation/page4_02-01.png" alt="">
+                  <div class="outter">
+                    <div class="inner">
+                      <img data-wow-delay=".2s" src="img/main/participation/page4_03-01.png" class="wow  bounceIn civil" data-wow-offset="50" alt="人">
+                      <img data-wow-delay=".4s" src="img/main/participation/page4_04-01.png" class="wow  bounceIn civil" data-wow-offset="50" alt="人">
+                      <img data-wow-delay=".6s" src="img/main/participation/page4_05-01.png" class="wow  bounceIn civil" data-wow-offset="50" alt="人">
+                      <img data-wow-delay=".8s" src="img/main/participation/page4_06-01.png" class="wow  bounceIn civil" data-wow-offset="50" alt="人">
+                      <img data-wow-delay="1s" src="img/main/participation/page4_07-01.png" class="wow  bounceIn civil" data-wow-offset="50" alt="人">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="col-md-7">
+              <div class="block wow fadeInRight">
+                <h3 class="right">都市規劃的「市民參與」</h3>
+                <p>現今台灣民眾參與都市規劃的方式為都市計劃的說明會或是相關都市發展的公聽會等，這些行政程序 的目的都是希望讓人民可以充分的表達自己的意見，並且可以與民眾互相溝通，提供決策者更能了解 一個地區的需求，藉此做為未來規劃的依據。
+                </p>
+                <p>不過可惜的是目前社會因為市民對於都市公共議題參與的過程尚不熟悉，包括參與的管道以及都市公 共議題，更難的是不擅於清楚地去表達出自己的意見。相對於專家式的規畫，融合市民意見的參與式 規劃，通常最大的障礙來自於溝通困難，因專業者所使用的語言大多來自系統性的知識，是一種較抽 象而且具高度專業知識背景的一種語言，反之，居民對於環境的知識則多半來自於個人的經驗或日常 生活。
+                </p>
+                <p>台灣的都市設計與規劃目前仍多以行政單位及專家學者之意見為主，我們期待作為一位市民能夠對其 居住所在地的事務、問題與期望擁有參與的權利和義務，可以影響計畫或決策的決定，因為這些計畫 將會影響到每一位居民的生活。
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-7">
-            <div class="block wow fadeInRight">
-              <h3 class="right">都市規劃的「市民參與」</h3>
-              <p>現今台灣民眾參與都市規劃的方式為都市計劃的說明會或是相關都市發展的公聽會等，這些行政程序 的目的都是希望讓人民可以充分的表達自己的意見，並且可以與民眾互相溝通，提供決策者更能了解 一個地區的需求，藉此做為未來規劃的依據。
-              </p>
-              <p>不過可惜的是目前社會因為市民對於都市公共議題參與的過程尚不熟悉，包括參與的管道以及都市公 共議題，更難的是不擅於清楚地去表達出自己的意見。相對於專家式的規畫，融合市民意見的參與式 規劃，通常最大的障礙來自於溝通困難，因專業者所使用的語言大多來自系統性的知識，是一種較抽 象而且具高度專業知識背景的一種語言，反之，居民對於環境的知識則多半來自於個人的經驗或日常 生活。
-              </p>
-              <p>台灣的都市設計與規劃目前仍多以行政單位及專家學者之意見為主，我們期待作為一位市民能夠對其 居住所在地的事務、問題與期望擁有參與的權利和義務，可以影響計畫或決策的決定，因為這些計畫 將會影響到每一位居民的生活。
-              </p>
+        </div>
+      </div>
+
+
+
+
+      <!-- div#participation.Page>div.container>div.row>div.title-block>img+h2+h3 -->
+      <div id="construction" class="Page">
+        <div class="container">
+          <div class="row">
+            <div class="title-block col-md-12">
+              <div class="title-background wow fadeInUp" data-wow-offset="100"></div>
+              <h2>關於共構</h2>
+              <span>提供使用者一個能發揮對於城市想像的平台 </span>
+            </div>
+          </div>
+          <div class="offsetContainer">
+            <div class="row">
+              <div class="col-md-7 col-md-offset-5 main-image  wow fadeInLeft" data-wow-offset="100">
+                <img src="img/main/animation-base.png" alt="城市的共構-動畫" id="animation-base" width="100%">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 wow fadeInLeft">
+                <h3>社群與科技是改變城市的力量</h3>
+                <p>現今台灣的都市設計與規劃多以行政單位及專家學者之意見為主，進行過程欠缺真正生活於 都市的市民意見投入。我們期待一位市民能夠對其居住所在地的事務、問題與期望擁有參與 的權利和義務，可以影響計畫或決策，因為這些計畫將會影響到每一位居民的生活。 「共構Co-Construction」將打造實體的互動城市平台，設計一座能提供使用者（市民）發揮 對於城市機能想像的平台，透過使用者意見投入與參與，使城市的規劃與設計在使用者（市民） 思維下呈現，共同建構出一座理想的城市。期待透過互動城市平台的操作讓使用者（市民）的
+                  想法視覺化（visualization），能減低因語言、專業知識背景等因素所造成的溝通障礙，讓 專業者的系統性知識與居民的個人經驗知識獲得整合，解決過往市民意見投入面臨的溝通問題。
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-
-
-
-    <!-- div#participation.Page>div.container>div.row>div.title-block>img+h2+h3 -->
-    <div id="construction" class="Page">
-      <div class="container">
-        <div class="row">
-          <div class="title-block col-md-12">
-            <div class="title-background wow fadeInUp" data-wow-offset="100"></div>
-            <h2>關於共構</h2>
-            <span>提供使用者一個能發揮對於城市想像的平台 </span>
-          </div>
-        </div>
-        <div class="offsetContainer">
+    <div id="About" class="LargePage">
+      <div id="aboutUs" class="Page">
+        <div class="container">
           <div class="row">
-            <div class="col-md-7 col-md-offset-5 main-image  wow fadeInLeft" data-wow-offset="100">
-              <img src="img/main/animation-base.png" alt="城市的共構-動畫" id="animation-base" width="100%">
+            <div class="col-md-12">
+              <div class="title-block">
+                <div class="title-background"></div>
+                <h2>關於我們</h2>
+                <span>政治大學數位內容與科技學士學位學程第三屆畢業展作品</span>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="container wide-bar"></div>
+        <div class="container">
           <div class="row">
-            <div class="col-md-12 wow fadeInLeft">
-              <h3>社群與科技是改變城市的力量</h3>
-              <p>現今台灣的都市設計與規劃多以行政單位及專家學者之意見為主，進行過程欠缺真正生活於 都市的市民意見投入。我們期待一位市民能夠對其居住所在地的事務、問題與期望擁有參與 的權利和義務，可以影響計畫或決策，因為這些計畫將會影響到每一位居民的生活。 「共構Co-Construction」將打造實體的互動城市平台，設計一座能提供使用者（市民）發揮 對於城市機能想像的平台，透過使用者意見投入與參與，使城市的規劃與設計在使用者（市民） 思維下呈現，共同建構出一座理想的城市。期待透過互動城市平台的操作讓使用者（市民）的
-                想法視覺化（visualization），能減低因語言、專業知識背景等因素所造成的溝通障礙，讓 專業者的系統性知識與居民的個人經驗知識獲得整合，解決過往市民意見投入面臨的溝通問題。
+            <div class="col-md-12">
+              <p>「共構 Co Construction」是政治大學數位內容與科技學士學位學程第三屆畢業展「乙太 Aether」參展作品。 我們相信，未來改變城市的力量來自社群與科技的參與，因此對於城市發展有著許多想像跟期待。
+              </p>
+
+              <p>政治大學數位內容與科技學士學位學程 （簡稱政大數位內容）畢業展為數位內容學生透過為期一年的專案實作，針對有興趣的主題進行數位內容創作與發想，不僅利用在學程所學的專業知識與技能，更因為組別成員來自不同科系，也能在不同專業背景下的知識中進行想法激盪與挑戰，一同創作出別具特色的數位內容作品。</p>
+
+              <p>第三屆畢業展主題「乙太 Aether」，即引申古典物理中光的傳播介質特性：沒有重量卻無所不在，強調數位內容以資訊技術的方式在社會中傳播創意及知識。數位內容，強調以資訊技術的方式傳播創意及知識，近幾年來呼聲極高。數位科技主體蛻變為載體，成為這個世代傳達想法的最新管道，如同乙太滲入你我日常生活中，不被察覺卻悄悄傳遞人的資訊、改變人的生活，進而影響人與社會互動的方式。
               </p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="About" class="LargePage">
-    <div id="aboutUs" class="Page">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-block">
-              <div class="title-background"></div>
-              <h2>關於我們</h2>
-              <span>政治大學數位內容與科技學士學位學程第三屆畢業展作品</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container wide-bar"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>「共構 Co Construction」是政治大學數位內容與科技學士學位學程第三屆畢業展「乙太 Aether」參展作品。 我們相信，未來改變城市的力量來自社群與科技的參與，因此對於城市發展有著許多想像跟期待。
-            </p>
-
-            <p>政治大學數位內容與科技學士學位學程 （簡稱政大數位內容）畢業展為數位內容學生透過為期一年的專案實作，針對有興趣的主題進行數位內容創作與發想，不僅利用在學程所學的專業知識與技能，更因為組別成員來自不同科系，也能在不同專業背景下的知識中進行想法激盪與挑戰，一同創作出別具特色的數位內容作品。</p>
-
-            <p>第三屆畢業展主題「乙太 Aether」，即引申古典物理中光的傳播介質特性：沒有重量卻無所不在，強調數位內容以資訊技術的方式在社會中傳播創意及知識。數位內容，強調以資訊技術的方式傳播創意及知識，近幾年來呼聲極高。數位科技主體蛻變為載體，成為這個世代傳達想法的最新管道，如同乙太滲入你我日常生活中，不被察覺卻悄悄傳遞人的資訊、改變人的生活，進而影響人與社會互動的方式。
-            </p>
-          </div>
-        </div>
-      </div>
 
 
-      <div class="container links">
-        <div class="row">
-          <div class="bigBtn">
-            <a href="http://dct.cs.nccu.edu.tw/aether" class="gotoOfficialWeb" target="_blanl">
+        <div class="container links">
+          <div class="row">
+            <div class="bigBtn">
+              <a href="http://dct.cs.nccu.edu.tw/aether" class="gotoOfficialWeb" target="_blanl">
             政大數位內容<br>官方網站
           </a>
-          </div>
-          <div class="bigBtn">
-            <a href="https://www.facebook.com/nccudctAether" class="gotoOfficailFB" target="_blanl">
+            </div>
+            <div class="bigBtn">
+              <a href="https://www.facebook.com/nccudctAether" class="gotoOfficailFB" target="_blanl">
             乙太Aetherbr<br>粉絲專頁
           </a>
-          </div>
-          <div class="bigBtn">
-            <a href="https://www.youtube.com/watch?v=uhaF5A_PhhQ&list=PLU6lLue_BYfkw4JCrCLL4ibUx8Q8c4yUy" class="gotoYoutube" target="_blanl">
+            </div>
+            <div class="bigBtn">
+              <a href="https://www.youtube.com/watch?v=uhaF5A_PhhQ&list=PLU6lLue_BYfkw4JCrCLL4ibUx8Q8c4yUy" class="gotoYoutube" target="_blanl">
             共構<br>Youtube頻道
           </a>
-          </div>
-          <div class="bigBtn">
-            <a href="https://www.facebook.com/DCTCoConstruction" class="gotoFB" target="_blanl">
+            </div>
+            <div class="bigBtn">
+              <a href="https://www.facebook.com/DCTCoConstruction" class="gotoFB" target="_blanl">
             共構<br>粉絲專頁
           </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div id="members" class="Page">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title-block">
+                <div class="title-background"></div>
+                <h2>共構成員</h2>
+                <span>政治大學數位內容與科技學士學位學程</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container wide-bar"></div>
+
+        <div class="container">
+          <div class="row">
+            <div class="member">
+              <img src="img/aboutus/photo_01-01.png" alt="翁家德">
+              <p class="name">地政 翁家德</p>
+              <p class="title">Project Manager
+                <br>Graphic Designer</p>
+            </div>
+            <div class="member">
+              <img src="img/aboutus/photo_02-01.png" alt="蘇道泓">
+              <p class="name">心理 蘇道泓</p>
+              <p class="title">3D Modeler
+                <br>Graphic Designer</p>
+            </div>
+            <div class="member">
+              <img src="img/aboutus/photo_03-01.png" alt="陳建安">
+              <p class="name">新聞 陳建安</p>
+              <p class="title">Media PR Promotion
+                <br>UI Designer</p>
+            </div>
+            <div class="member">
+              <img src="img/aboutus/photo_04-01.png" alt="林裕翔">
+              <p class="name">資科 林裕翔</p>
+              <p class="title">Software & Database Engineer
+                <br>
+              </p>
+            </div>
+
+            <div class="col-md-offset-3 member ">
+              <img src="img/aboutus/photo_05-01.png" alt="鄭竣丰">
+              <p class="name">教育 鄭竣丰</p>
+              <p class="title">Software & Hardware Engineer
+                <br>
+              </p>
+            </div>
+            <div class="member">
+              <img src="img/aboutus/photo_06-01.png" alt="劉律琪">
+              <p class="name">資科 劉律琪</p>
+              <p class="title">Software & Database Engineer
+                <br>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
 
-
-
-    <div id="members" class="Page">
+    <div id="Reserve" class="LargePage Page">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
+
             <div class="title-block">
               <div class="title-background"></div>
-              <h2>共構成員</h2>
-              <span>政治大學數位內容與科技學士學位學程</span>
+              <h2>預約系統</h2>
+              <span>共構作品完整體驗為20分鐘，共構誠摯邀請你們的參與</span>
             </div>
           </div>
         </div>
       </div>
       <div class="container wide-bar"></div>
-
       <div class="container">
         <div class="row">
-          <div class="member col-sm-4">
-            <img src="img/aboutus/photo_01-01.png" alt="翁家德">
-            <p class="name">地政 翁家德</p>
-            <p class="title">Project Manager
-              <br>Graphic Designer</p>
-          </div>
-          <div class="member">
-            <img src="img/aboutus/photo_02-01.png" alt="蘇道泓">
-            <p class="name">心理 蘇道泓</p>
-            <p class="title">3D Modeler
-              <br>Graphic Designer</p>
-          </div>
-          <div class="member">
-            <img src="img/aboutus/photo_03-01.png" alt="陳建安">
-            <p class="name">新聞 陳建安</p>
-            <p class="title">Media PR Promotion
-              <br>UI Designer</p>
-          </div>
-          <div class="member">
-            <img src="img/aboutus/photo_04-01.png" alt="林裕翔">
-            <p class="name">資科 林裕翔</p>
-            <p class="title">Software & Database Engineer
-              <br>
-            </p>
-          </div>
-
-          <div class="col-md-offset-3 member ">
-            <img src="img/aboutus/photo_05-01.png" alt="鄭竣丰">
-            <p class="name">教育 鄭竣丰</p>
-            <p class="title">Software & Hardware Engineer
-              <br>
-            </p>
-          </div>
-          <div class="member">
-            <img src="img/aboutus/photo_06-01.png" alt="劉律琪">
-            <p class="name">資科 劉律琪</p>
-            <p class="title">Software & Database Engineer
-              <br>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div id="Reserve" class="LargePage Page">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-
-          <div class="title-block">
-            <div class="title-background"></div>
-            <h2>預約系統</h2>
-            <span>共構作品完整體驗為20分鐘，共構誠摯邀請你們的參與</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container wide-bar"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-
-          <p>「共構 Co Construction」是政治大學數位內容與科技學士學位學程第三屆畢業展「乙太 Aether」參展作品 展期：5/25 (一) 12：00 開幕至 5/30 (六) 15：00，每天10：00 - 16：30 地點：國立政治大學社會科學資料中心 一樓展演廳 ( 查看地圖 ) </p>
-
-          <p class="important">為追求「共構 Co Construction」良好的體驗，我們規劃每20分鐘為一梯次開放參觀，每梯次人數上限為5位。 因此，邀請您事先透過我們的預約系統進行梯次預約，並且留下姓名與電子信箱以利通知，謝謝！
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container form-container">
-      <form>
-        <div class="row">
-
-          <div class="col-md-6">
-            <div class="form-group">
-              <label class="control-label" for="name">姓名</label>
-              <input id="name" name="name" type="text" placeholder="姓名" class="input-xlarge form-control" required="" disabled data-toggle="tooltip" data-placement="bottom" title="Tooltip on left">
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="phone">信箱</label>
-              <input id="email" name="email" type="text" placeholder="信箱" class="input-xlarge form-control" required="" disabled>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label class="control-label" for="reserveDate">預約日期</label>
-              <select id="reserveDate" name="reserveDate" class="input-xlarge form-control" disabled>
-                <option>2015-5-25 (星期一)</option>
-                <option>2015-5-26 (星期二)</option>
-                <option>2015-5-27 (星期三)</option>
-                <option>2015-5-28 (星期四)</option>
-                <option>2015-5-29 (星期五)</option>
-                <option>2015-5-30 (星期六)</option>
-              </select>
-
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="reserverTime">時段</label>
-              <select id="reserverTime" name="reserverTime" class="input-xlarge form-control" disabled>
-                <option>早上 10:00 - 10:20</option>
-                <option>早上 10:20 - 10:40</option>
-                <option>早上 10:40 - 11:00</option>
-              </select>
-            </div>
-          </div>
           <div class="col-md-12">
-            <button type="submit" class="btn btn-dark-blue">送出</button>
-          </div>
 
+            <p>「共構 Co Construction」是政治大學數位內容與科技學士學位學程第三屆畢業展「乙太 Aether」參展作品 展期：5/25 (一) 12：00 開幕至 5/30 (六) 15：00，每天10：00 - 16：30 地點：國立政治大學社會科學資料中心 一樓展演廳 ( 查看地圖 ) </p>
+
+            <p class="important">為追求「共構 Co Construction」良好的體驗，我們規劃每20分鐘為一梯次開放參觀，每梯次人數上限為5位。 因此，邀請您事先透過我們的預約系統進行梯次預約，並且留下姓名與電子信箱以利通知，謝謝！
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="container form-container">
+        <form>
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label" for="name">姓名</label>
+                <input id="name" name="name" type="text" placeholder="姓名" class="input-xlarge form-control" required="" disabled data-toggle="tooltip" data-placement="bottom" title="Tooltip on left">
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="phone">信箱</label>
+                <input id="email" name="email" type="text" placeholder="信箱" class="input-xlarge form-control" required="" disabled>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label" for="reserveDate">預約日期</label>
+                <select id="reserveDate" name="reserveDate" class="input-xlarge form-control" disabled>
+                  <option>2015-5-25 (星期一)</option>
+                  <option>2015-5-26 (星期二)</option>
+                  <option>2015-5-27 (星期三)</option>
+                  <option>2015-5-28 (星期四)</option>
+                  <option>2015-5-29 (星期五)</option>
+                  <option>2015-5-30 (星期六)</option>
+                </select>
+
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="reserverTime">時段</label>
+                <select id="reserverTime" name="reserverTime" class="input-xlarge form-control" disabled>
+                  <option>早上 10:00 - 10:20</option>
+                  <option>早上 10:20 - 10:40</option>
+                  <option>早上 10:40 - 11:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-dark-blue">送出</button>
+            </div>
+
+          </div>
+      </div>
+      </form>
     </div>
-    </form>
-  </div>
-  </div>
+
 
   <footer>
     <div class="container">
@@ -473,16 +486,17 @@
       </div>
     </div>
   </footer>
-
-
+</div>
 
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
 
-  <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script> 
-  <script src="js/app.min.js" type="text/javascript"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/app.js" type="text/javascript"></script>
+</div>
+
 </body>
 
 </html>
