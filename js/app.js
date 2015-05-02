@@ -34,10 +34,6 @@
     };
     wow = new WOW();
     wow.init();
-    $('#_mag').magnify({
-      speed: 200,
-      src: 'img/main/plan/cover_small.png'
-    });
     $('[data-toggle="tooltip"]').tooltip();
     router = new Simrou();
     routers = {};
