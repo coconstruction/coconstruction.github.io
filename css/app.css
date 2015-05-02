@@ -12829,11 +12829,11 @@ body {
 
 .worldmap {
   background: url("../img/common/worldmap.png");
-  background-size: auto 450px;
+  background-size: auto 600px;
   width: 100%;
   height: 100vmax;
   position: absolute;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat; }
 
 .navbar .divider-vertical {
@@ -13189,7 +13189,8 @@ body {
     line-height: 100%;
     position: absolute;
     font-size: 24px;
-    color: #73c3ca; }
+    color: #73c3ca;
+    z-index: 200; }
   #main .main-navigation img {
     width: 50%; }
 
@@ -13206,6 +13207,9 @@ body {
       top: -25px;
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 195, 39, 0.6)), to(rgba(255, 255, 255, 0)), color-stop(0.75, rgba(255, 255, 255, 0)));
       background-image: -moz-gradient(linear, left top, left bottom, from(rgba(255, 195, 39, 0.6)), to(rgba(255, 255, 255, 0)), color-stop(0.75, rgba(255, 255, 255, 0))); }
+      @media (max-width: 1199px) {
+        .Page .title-block .title-background {
+          top: -46px; } }
     .Page .title-block span {
       color: #518c98;
       position: relative;
@@ -13395,6 +13399,7 @@ h2 {
 
 footer {
   background: #518c98;
+  font-weight: 500;
   margin-top: 50px; }
   footer .footerInfo {
     text-align: center;
