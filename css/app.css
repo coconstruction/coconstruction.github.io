@@ -12827,6 +12827,10 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat; }
 
+body:after {
+  display: none;
+  content: url("../img/aboutus/about_dctwebicon_yellow.png") url("../img/aboutus/about_arthefbricon_yellow.png") url("../img/aboutus/about_youtubeicon_yellow.png") url("../img/aboutus/about_arthefbricon_yellow.png"); }
+
 .worldmap {
   background: url("../img/common/worldmap.png");
   background-size: auto 600px;
@@ -13404,5 +13408,3 @@ footer {
   footer .footerInfo {
     text-align: center;
     padding: 10px 0; }
-
-/*# sourceMappingURL=app.css.map */
