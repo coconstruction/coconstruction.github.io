@@ -31,9 +31,7 @@
 
 </head>
 
-<body role="document">
-  <!-- Fixed navbar z-->
-  <div class="mainBackground"></div>
+<body role="document" class="mainBackground">
   <div class="worldmap"></div>
   <div id="prepare">
 
@@ -56,10 +54,10 @@
             <li class="dropdown">
               <a href="#/Main" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">創作核心理念<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a class="eleNav" href="#/Main/about" data-goto="#Main/about">認識都市</a></li>
-                <li><a class="eleNav" href="#/Main/plan" data-goto="#Main/plan">都市規劃</a></li>
-                <li><a class="eleNav" href="#/Main/participation" data-goto="#participation">市民參與</a></li>
-                <li><a class="eleNav" href="#/Main/construction" data-goto="#construction">關於共構</a></li>
+                <li><a class="eleNav" href="#/Main/about" data-goto="#Main/about" data-toggle="collapse" data-target="#navbar.in">認識都市</a></li>
+                <li><a class="eleNav" href="#/Main/plan" data-goto="#Main/plan" data-toggle="collapse" data-target="#navbar.in">都市規劃</a></li>
+                <li><a class="eleNav" href="#/Main/participation" data-goto="#participation" data-toggle="collapse" data-target="#navbar.in">市民參與</a></li>
+                <li><a class="eleNav" href="#/Main/construction" data-goto="#construction" data-toggle="collapse" data-target="#navbar.in">關於共構</a></li>
                 <!--
                 <li class="divider"></li>
                 <li class="dropdown-header">Nav header</li>
@@ -70,9 +68,9 @@
             <!--li class="divider-vertical"></li>
           <li><a href="#news">官方訊息</a></li-->
             <li class="divider-vertical hidden-md"></li>
-            <li><a class="pageNav disabled" href="#" onclick="return false" data-toggle="tooltip" data-placement="bottom" title="5/7 星期四 開放">預約系統</a></li>
+            <li><a class="pageNav disabled" href="#" onclick="return false" data-toggle="tooltip" data-placement="bottom" title="5/7 星期四 開放" data-toggle="collapse" data-target="#navbar.in">預約系統</a></li>
             <li class="divider-vertical"></li>
-            <li><a class="pageNav" href="#/About">關於我們</a></li>
+            <li><a class="pageNav" href="#/About" data-toggle="collapse" data-target="#navbar.in">關於我們</a></li>
             <li class="divider-vertical"></li>
             <li><a href="https://www.facebook.com/DCTCoConstruction" class="fb_btn" target="_blank">.</a></li>
 
@@ -495,12 +493,6 @@
 
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/app.js" type="text/javascript"></script>
-  <script >
-    $(function($){
-      alert($(".mainBackground").width());
-      alert($(".mainBackground").height()) ;
-    })
-  </script>
 </div>
 
 </body>
