@@ -13402,7 +13402,7 @@ h2 {
   min-width: 220px;
   background-position: left center;
   text-indent: -10000px; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .navbar-brand {
       position: absolute;
       background-position: center;
@@ -13438,4 +13438,7 @@ footer {
     -moz-animation: none !important;
     -o-animation: none !important;
     -ms-animation: none !important;
-    animation: none !important; } }
+    animation: none !important; }
+
+  .wow {
+    visibility: visible !important; } }
