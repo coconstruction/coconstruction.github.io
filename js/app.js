@@ -32,10 +32,10 @@
         }
       });
     };
-    wow = new WOW();
-    wow.init({
+    wow = new WOW({
       mobile: false
     });
+    wow.init();
     $('[data-toggle="tooltip"]').tooltip();
     router = new Simrou();
     routers = {};
