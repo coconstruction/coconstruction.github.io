@@ -1542,7 +1542,7 @@ pre {
   .row:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, #aboutUs .bigBtn, .col-md-3, #members .member, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, #aboutUs .bigBtn, #members .member, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, #aboutUs .bigBtn, #members .member, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, #aboutUs .bigBtn, #members .member, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1705,7 +1705,7 @@ pre {
   margin-left: 100%; }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, #aboutUs .bigBtn, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, #aboutUs .bigBtn, #members .member, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left; }
 
   .col-sm-1 {
@@ -1714,7 +1714,7 @@ pre {
   .col-sm-2 {
     width: 16.66667%; }
 
-  .col-sm-3, #aboutUs .bigBtn {
+  .col-sm-3, #aboutUs .bigBtn, #members .member {
     width: 25%; }
 
   .col-sm-4 {
@@ -1861,7 +1861,7 @@ pre {
   .col-sm-offset-12 {
     margin-left: 100%; } }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, #members .member, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
 
   .col-md-1 {
@@ -1870,7 +1870,7 @@ pre {
   .col-md-2 {
     width: 16.66667%; }
 
-  .col-md-3, #members .member {
+  .col-md-3 {
     width: 25%; }
 
   .col-md-4 {
@@ -2017,7 +2017,7 @@ pre {
   .col-md-offset-12 {
     margin-left: 100%; } }
 @media (min-width: 1200px) {
-  .col-md-1, .col-md-2, .col-md-3, #members .member, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
 
   .col-md-1 {
@@ -2026,7 +2026,7 @@ pre {
   .col-md-2 {
     width: 16.66667%; }
 
-  .col-md-3, #members .member {
+  .col-md-3 {
     width: 25%; }
 
   .col-md-4 {
@@ -5163,7 +5163,6 @@ button.close {
 .visible-xs-inline-block,
 .visible-sm-block,
 .visible-sm-inline,
-.navbar .fb_btn_mobile,
 .visible-sm-inline-block,
 .visible-md-block,
 .visible-md-inline,
@@ -5216,7 +5215,7 @@ button.close {
     display: block !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .visible-sm-inline, .navbar .fb_btn_mobile {
+  .visible-sm-inline {
     display: inline !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -5277,7 +5276,7 @@ button.close {
   .hidden-xs, .navbar .divider-vertical, .navbar .fb_btn, .wide-bar {
     display: none !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
-  .hidden-sm, .navbar .divider-vertical, .navbar .fb_btn {
+  .hidden-sm {
     display: none !important; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   .hidden-md {
@@ -12879,7 +12878,8 @@ body:after {
   width: 100%;
   margin-top: -80px;
   background-size: auto 120px;
-  background-position: center; }
+  background-position: center;
+  background-repeat: no-repeat; }
 
 #main {
   padding-top: 100px;
@@ -13274,6 +13274,7 @@ h2 {
 .Page {
   margin-top: 50px; }
   .Page .wide-bar {
+    background-repeat: no-repeat;
     background-image: url("../img/aboutus/bar.png"); }
 
 .positionContainer {
@@ -13402,7 +13403,7 @@ h2 {
   min-width: 220px;
   background-position: left center;
   text-indent: -10000px; }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     .navbar-brand {
       position: absolute;
       background-position: center;
@@ -13447,3 +13448,5 @@ footer {
     -o-animation: none !important;
     -ms-animation: none !important;
     animation: none !important; } }
+
+/*# sourceMappingURL=app.css.map */
