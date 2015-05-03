@@ -33,7 +33,9 @@
       });
     };
     wow = new WOW();
-    wow.init();
+    wow.init({
+      mobile: false
+    });
     $('[data-toggle="tooltip"]').tooltip();
     router = new Simrou();
     routers = {};
