@@ -20,15 +20,7 @@
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/app.css">
-
-  <script src="js/vendor/jquery-1.11.3.min.js"></script>
-
-  <script src="js/vendor/Simrou/build/simrou.min.js" type="text/javascript"></script>
-  <script src="js/vendor/wow.min.js"></script>
-
-
-
-
+  <script src="js/all.min.js"></script>
 </head>
 
 <body role="document" class="mainBackground">
@@ -68,7 +60,7 @@
             <!--li class="divider-vertical"></li>
           <li><a href="#news">官方訊息</a></li-->
             <li class="divider-vertical"></li>
-            <li><a class="pageNav disabled" href="#" onclick="return false" data-toggle="tooltip" data-placement="bottom" title="5/7 星期四 開放" data-toggle="collapse" data-target="#navbar.in">預約系統</a></li>
+            <li><a class="pageNav" href="#/Reserve"  data-toggle="collapse" data-target="#navbar.in">預約系統</a></li>
             <li class="divider-vertical"></li>
             <li><a class="pageNav" href="#/About" data-toggle="collapse" data-target="#navbar.in">關於我們</a></li>
             <li class="divider-vertical"></li>
@@ -432,43 +424,43 @@
         </div>
       </div>
       <div class="container form-container">
-        <form>
+        <form id="reserveForm">
           <div class="row">
 
             <div class="col-md-6">
-              <div class="form-group">
+              <div class="form-group" >
                 <label class="control-label" for="name">姓名</label>
-                <input id="name" name="name" type="text" placeholder="姓名" class="input-xlarge form-control" required="" disabled data-toggle="tooltip" data-placement="bottom" title="Tooltip on left">
+                <input id="name" name="name" type="text" placeholder="姓名" class="input-xlarge form-control" required="" >
               </div>
               <div class="form-group">
                 <label class="control-label" for="phone">信箱</label>
-                <input id="email" name="email" type="text" placeholder="信箱" class="input-xlarge form-control" required="" disabled>
+                <input id="email" name="email" type="email" placeholder="信箱" class="input-xlarge form-control" required="">
               </div>
             </div>
+
             <div class="col-md-6">
               <div class="form-group">
                 <label class="control-label" for="reserveDate">預約日期</label>
-                <select id="reserveDate" name="reserveDate" class="input-xlarge form-control" disabled>
-                  <option>2015-5-25 (星期一)</option>
-                  <option>2015-5-26 (星期二)</option>
-                  <option>2015-5-27 (星期三)</option>
-                  <option>2015-5-28 (星期四)</option>
-                  <option>2015-5-29 (星期五)</option>
-                  <option>2015-5-30 (星期六)</option>
+                <select id="reserveDate" name="reserveDate" class="input-xlarge form-control" >
+                  <option id="reserveDateHint" value="false">請選擇日期</option>
+                  <option value="25" data-day="ㄧ">2015-5-25 星期一</option>
+                  <option value="26" data-day="二">2015-5-26 星期二</option>
+                  <option value="27" data-day="三">2015-5-27 星期三</option>
+                  <option value="28" data-day="四">2015-5-28 星期四</option>
+                  <option value="29" data-day="五">2015-5-29 星期五</option>
+                  <option value="30" data-day="六">2015-5-30 星期六</option>
                 </select>
 
               </div>
               <div class="form-group">
-                <label class="control-label" for="reserverTime">時段</label>
-                <select id="reserverTime" name="reserverTime" class="input-xlarge form-control" disabled>
-                  <option>早上 10:00 - 10:20</option>
-                  <option>早上 10:20 - 10:40</option>
-                  <option>早上 10:40 - 11:00</option>
+                <label class="control-label" for="reserveTime">時段</label>
+                <select id="reserveTime" name="reserveTime" class="input-xlarge form-control" >
+                  <option id="reserveTimeHint" value="false" disabled="disabled">請先選擇日期</option>
                 </select>
               </div>
             </div>
             <div class="col-md-12">
-              <button type="submit" class="btn btn-dark-blue">送出</button>
+              <button type="submit" id="reserveSubmit" class="btn btn-dark-blue">送出</button>
             </div>
 
           </div>
@@ -487,14 +479,6 @@
     </div>
   </footer>
 </div>
-
-
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/app.js" type="text/javascript"></script>
 </div>
 
 </body>
