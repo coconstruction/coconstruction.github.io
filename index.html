@@ -430,11 +430,11 @@
             <div class="col-md-6">
               <div class="form-group" >
                 <label class="control-label" for="name">姓名</label>
-                <input id="name" name="name" type="text" placeholder="姓名" class="input-xlarge form-control" required="" >
+                <input id="name" name="name" type="text" placeholder="報名系統已關閉，請到現場預約" class="input-xlarge form-control" required="" disabled="true">
               </div>
               <div class="form-group">
                 <label class="control-label" for="phone">信箱</label>
-                <input id="email" name="email" type="email" placeholder="信箱" class="input-xlarge form-control" required="">
+                <input id="email" name="email" type="email" placeholder="報名系統已關閉，請到現場預約" class="input-xlarge form-control" required="" disabled="true">
               </div>
             </div>
 
@@ -442,12 +442,7 @@
               <div class="form-group">
                 <label class="control-label" for="reserveDate">預約日期</label>
                 <select id="reserveDate" name="reserveDate" class="input-xlarge form-control" >
-                  <option id="reserveDateHint" value="false">請選擇日期</option>
-                  <option value="25" data-day="ㄧ">2015-5-25 星期一</option>
-                  <option value="26" data-day="二">2015-5-26 星期二</option>
-                  <option value="27" data-day="三">2015-5-27 星期三</option>
-                  <option value="28" data-day="四">2015-5-28 星期四</option>
-                  <option value="29" data-day="五">2015-5-29 星期五</option>
+                  <option id="reserveDateHint" value="false" disabled="true"></option>
                   <option value="30" data-day="六">2015-5-30 星期六</option>
                 </select>
 
@@ -460,7 +455,7 @@
               </div>
             </div>
             <div class="col-md-12">
-              <button type="submit" id="reserveSubmit" class="btn btn-dark-blue">送出</button>
+              <button type="submit" id="reserveSubmit" class="btn btn-dark-blue" disabled="true">可以先查看時段，到現場預約</button>
             </div>
 
           </div>
